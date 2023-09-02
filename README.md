@@ -14,6 +14,18 @@ Additionally, if the user does not exist, a 404 error will be returned with the 
 https://github.com/Savilus/github-repo.git
 ````
 **2.** Run the API from  *GithubRepoApplication.class*
+
+**3.** Now you can use the Postman app to send your requests. For example, to list my repositories you can send a get query to  ```` http://localhost:8080/repositories/Savilus ````
+
+#
+
+If you want to send more than 60 request per hour you have to do three things:
+1) Uncomment line 23 and 29-32 in GithubApiService.
+2) Genereta token from your github account.
+3) Add GITHUB_TOKEN environment variable with your github account token value.
+
+
+
 ***
 To create this application I used:
 
@@ -24,3 +36,5 @@ To create this application I used:
 <code><img height="50" src="https://user-images.githubusercontent.com/25181517/117207242-07d5a700-adf4-11eb-975e-be04e62b984b.png" alt="Maven" title="Maven" /></code>
 <code><img height="50" src="https://user-images.githubusercontent.com/25181517/190229463-87fa862f-ccf0-48da-8023-940d287df610.png" alt="Lombok" title="Lombok" /></code>
 </div>
+
+Created by Jakub Łanoszka.
